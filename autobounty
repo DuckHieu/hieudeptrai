@@ -23,18 +23,3 @@ for _,Name in pairs(UiOrders) do
     ElementsCollection[Name]={}
 end
 
-local UiIntilize = {
-    ["Main Farm"] = {
-        {Mode="Label",Title="Only Turn On 1 Farm At The Same Time"},
-        {Mode="Toggle",Title="Auto Katakuri",Description="Turn On Auto Kill Cake Prince And Auto Kill Dough King By Default",Args={"Katakuri","Enable"}},
-        {Mode="Toggle",Title="Auto Bone",Description="",Args={"Bone","Enable"}},
-        {Mode="Toggle",Title="Kill Aura",Description="Farm Near Lv Mob Or Near Position",Args={"Kill Aura","Enable"}},
-        {Mode="Toggle",Title="Fully Auto Dough King",Description="",Args={"Full Dough King","Enable"}},
-        {Mode="Label",Title="Setting For Auto Farm"},
-        {Mode="Label",Title="Anchor Position"},
-        {Mode="Toggle",Title="TP Back Anchor Position",Description="If Exceed Anchor Position Will Tp Back To Anchor Position",Args={"Kill Aura","AnchorTPBack"}},
-        {Mode="Button",Title="Set Anchor Position",Callback=function ()
-            pcall(function ()
-                getgenv().Setting["Kill Aura"].AnchorPosition = tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
-            end)
-        end},
