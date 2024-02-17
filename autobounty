@@ -15,11 +15,4 @@ local Window = getgenv().Window or Fluent:CreateWindow({
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
-local UiOrders = {"Main Farm","Stack Auto farm","Sub Farming","Status","Player-Status","Fruit","Local Player","Travel","Pvp-Visual","Raid-Material","RaceV4-Mirage","Sea Events","Shop","Setting","Webhook","Game-Server","One Click"}
-local TabCollections = {
-}
-ElementsCollection = {}
-for _,Name in pairs(UiOrders) do
-    ElementsCollection[Name]={}
-end
 
